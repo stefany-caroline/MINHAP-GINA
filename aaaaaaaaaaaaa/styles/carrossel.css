@@ -1,0 +1,135 @@
+.carrossel__titulo {
+    color: var(--azul-escuro); /* Cor consistente com a paleta */
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem; /* Usando rem para responsividade */
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+    font-family: var(--fonte-principal);
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px; /* Adicionando bordas arredondadas para harmonizar com os cards */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none; /* Ocultando botões padrão inicialmente */
+}
+
+.swiper-pagination {
+    position: static; /* Posição fixa dentro do layout */
+    margin: 0.5em 0;
+}
+
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botões {
+    display: flex;
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.descrição__titulo {
+    color: var(--azul-escuro); /* Alterado para manter o tema */
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+}
+
+.descrição__titulo-livro {
+    color: var(--azul-claro);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0.5em 0;
+    font-family: var(--fonte-secundario); /* Fonte cursiva */
+}
+
+.descrição__texto {
+    font-size: 1rem;
+    font-family: var(--fonte-principal);
+    color: var(--cinza-medio); /* Texto em tom suave */
+}
+
+.botões__item {
+    margin: 0 0.5em;
+}
+
+.botões__ancora {
+    background-color: var(--azul-escuro); /* Botão consistente com a paleta */
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px; /* Adicionando borda arredondada */
+    transition: background-color 0.3s;
+}
+
+.botões__ancora:hover {
+    background-color: var(--rosa-claro); /* Cor de destaque ao passar o mouse */
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 2rem;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__container {
+        display: flex;
+        margin: 0 15vw 3em 15vw; /* Ajustado para alinhamento visual */
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .descrição__titulo {
+        font-size: 2rem; /* Ajustado para não ficar exagerado */
+    }
+
+    .descrição__texto {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        width: 60%;
+        margin-left: 3em;
+    }
+}

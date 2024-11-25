@@ -1,0 +1,76 @@
+.banner {
+    background-color: var(--rosa-claro); /* Usando o rosa suave pastel definido */
+    color: var(--preto-suave);
+    text-align: center;
+    padding: 4em 2em;
+}
+
+.banner__titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--fonte-secundario); /* Usando a fonte cursiva */
+    color: var(--preto-suave);
+}
+
+.banner__texto {
+    font-weight: 400;
+    margin: 1em 0;
+    font-size: 1.2rem;
+    font-family: var(--fonte-principal);
+    color: var(--preto); /* Títulos e textos com preto escuro */
+}
+
+.banner__pesquisa {
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-claro);
+    color: var(--preto-suave);
+    border-radius: 24px;
+    padding: 1em;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+}
+
+.banner__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cinza-medio);
+    background: url("img/Lupa.svg") no-repeat;
+    background-position: 1em center;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        padding: 6em 2em;
+    }
+
+    .banner__titulo {
+        font-size: 3rem;
+    }
+
+    .banner__pesquisa {
+        width: 50%;
+    }
+
+    .banner__pesquisa::placeholder {
+        background-position: 1.5em center;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .banner {
+        padding: 8em 0;
+    }
+
+    .banner__pesquisa {
+        width: 35%;
+    }
+
+    .banner__pesquisa::placeholder {
+        background-position: 2em center;
+    }
+}

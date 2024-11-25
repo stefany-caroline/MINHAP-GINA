@@ -1,0 +1,83 @@
+.contato {
+    background-color: var(--rosa-claro); /* Usando o rosa pastel suave para harmonizar */
+    padding: 2em 1em;
+    text-align: center; /* Centralizando o conteúdo */
+}
+
+.contato__titulo,
+.contato__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: var(--fonte-principal); /* Usando a fonte principal */
+}
+
+.contato__titulo {
+    font-size: 1.8rem; /* Ajuste para responsividade */
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.contato__texto {
+    font-weight: 400;
+    margin: 1em 0;
+    font-size: 1rem;
+}
+
+.contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul-claro); /* Ajustando para o azul claro */
+    border-radius: 24px;
+    width: 80%;
+    max-width: 400px; /* Limitando o tamanho do input */
+    color: var(--azul-claro);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    margin: 1em auto; /* Centralizando o input */
+    background-color: var(--branco); /* Fundo branco para contraste */
+}
+
+.contato__email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-medio); /* Cor mais suave para o placeholder */
+    background: url("img/Email.svg") no-repeat 10px center;
+    padding-left: 2.5em; /* Espaço ajustado para ícone */
+}
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3em 5vw; /* Ajuste de padding em telas maiores */
+    }
+
+    .contato__titulo {
+        font-size: 2rem;
+    }
+
+    .contato__descrição {
+        width: 40%;
+        text-align: left; /* Alinhamento para texto descritivo */
+        margin-right: 2em;
+    }
+
+    .contato__email {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 4em 15vw; /* Mais espaço em telas muito grandes */
+    }
+
+    .contato__titulo {
+        font-size: 2.5rem; /* Tamanho maior para destaque */
+    }
+
+    .contato__email {
+        width: 35%;
+    }
+}

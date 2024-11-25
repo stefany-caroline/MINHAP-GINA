@@ -1,0 +1,95 @@
+hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid var(--cinza-claro); /* Adicionando uma borda suave */
+}
+
+.rodapé {
+    background-color: var(--azul-claro); /* Alterado para o azul claro */
+    color: var(--preto-suave); /* Texto em preto suave */
+    padding: 2em 1em;
+    text-align: center;
+    font-family: var(--fonte-principal);
+}
+
+.lista-rodapé {
+    display: none;
+}
+
+.rodapé__titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--rosa-claro); /* Destaque com rosa pastel */
+    margin-bottom: 1em;
+}
+
+.rodapé__texto {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cinza-medio);
+}
+
+@media screen and (min-width: 1024px) {
+    .rodapé {
+        display: flex;
+        justify-content: space-around;
+        text-align: left; /* Ajustando alinhamento para telas maiores */
+    }
+
+    .lista-rodapé {
+        display: block;
+    }
+
+    .lista-rodapé__item {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .lista-rodapé__link {
+        color: var(--azul-escuro); /* Alterado para azul escuro */
+        text-decoration: none;
+        margin-left: 0.6em;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .lista-rodapé__link:hover {
+        color: var(--laranja-claro); /* Cor de destaque no hover */
+    }
+
+    .lista-rodapé__titulo {
+        font-size: 1rem;
+        color: var(--cinza-claro); /* Título mais claro */
+        font-weight: 700;
+        margin-bottom: 0.5em;
+    }
+
+    .rodapé__titulo {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .lista-rodapé {
+        border-left: 1px solid var(--cinza-claro); /* Separador visual */
+        padding-left: 2em;
+        margin-left: 2em;
+    }
+
+    .rodapé {
+        padding: 3em 15vw; /* Espaçamento maior em telas grandes */
+    }
+
+    .rodapé__titulo {
+        font-size: 2.5rem;
+    }
+
+    .rodapé__texto {
+        font-size: 1.2rem;
+    }
+
+    .lista-rodapé__link {
+        font-size: 1.1rem;
+    }
+}

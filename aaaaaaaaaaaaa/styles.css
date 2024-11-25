@@ -1,0 +1,174 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+/* Importando fontes do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Dancing+Script:wght@400;500&family=Quicksand:wght@300;400&display=swap");
+
+:root {
+    --cor-de-fundo: #F9F9F9; /* Fundo muito suave, quase branco */
+    --branco: #FFFFFF;
+    --laranja-claro: #FFDAB9; /* Laranja bem suave (peach) */
+    --azul-claro: #A8D0E6; /* Azul claro e suave */
+    --verde-claro: #B8E0D2; /* Verde pastel */
+    --rosa-claro: #F4C2C2; /* Rosa suave pastel */
+    --azul-escuro: #4A90E2; /* Azul mais forte para detalhes */
+    --cinza-claro: #A1A1A1; /* Cinza claro */
+    --cinza-medio: #4E4E4E; /* Cinza escuro para textos */
+    --preto: #2E2E2E; /* Preto mais escuro para textos principais */
+    --fonte-principal: "Poppins", sans-serif;
+    --fonte-secundario: "Dancing Script", cursive;
+    --fonte-terciaria: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal); /* Poppins para o corpo */
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--preto); /* Texto em preto mais escuro */
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--azul-claro); /* Cabeçalho com azul claro e suave */
+    color: var(--branco);
+    padding: 20px 0;
+}
+
+header .container__titulo {
+    font-family: var(--fonte-secundario); /* Fonte cursiva fofa para o título */
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--rosa-claro); /* Título com rosa suave */
+    text-align: center;
+}
+
+header .lista-menu__link {
+    color: var(--branco);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header .lista-menu__link:hover {
+    color: var(--laranja-claro); /* Cor de destaque para links */
+}
+
+footer {
+    background-color: var(--verde-claro); /* Rodapé com verde suave */
+    color: var(--preto-suave);
+    padding: 20px;
+    text-align: center;
+}
+
+footer .rodapé__titulo {
+    font-family: var(--fonte-secundario); /* Fonte cursiva fofa para o rodapé */
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--preto-suave);
+}
+
+footer .rodapé__texto {
+    font-size: 1rem;
+    color: var(--cinza-claro);
+    margin-top: 10px;
+}
+
+.banner {
+    background-color: var(--rosa-claro); /* Banner com fundo rosa suave */
+    color: var(--preto-suave);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.banner__titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.banner__texto {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.banner__pesquisa {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--cinza-claro);
+    background-color: var(--branco);
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.carrossel__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--azul-escuro);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.autores__titulo,
+.adaptacoes__titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--azul-escuro);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.autores__lista,
+.adaptacoes__lista {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.autores__link,
+.adaptacoes__link {
+    font-size: 1.2rem;
+    color: var(--azul-escuro);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.autores__link:hover,
+.adaptacoes__link:hover {
+    color: var(--laranja-claro); /* Cor de destaque ao passar o mouse */
+}
+
+.opções__link {
+    font-family: var(--fonte-terciaria); /* Fonte Quicksand para links */
+    color: var(--azul-escuro);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.opções__link:hover {
+    color: var(--laranja-claro);
+}
+
+.container__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--azul-escuro);
+}
+
+.container__texto {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.container__imagem {
+    width: 30px;
+    height: 30px;
+}
